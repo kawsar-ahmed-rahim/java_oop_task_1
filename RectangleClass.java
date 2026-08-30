@@ -24,7 +24,7 @@ class Rectangle {
     }
 }
 
-public class Ex2_Rectangle {
+public class RectangleClass {
     public static void main(String[] args) {
         Rectangle rect = new Rectangle(10, 5);
 

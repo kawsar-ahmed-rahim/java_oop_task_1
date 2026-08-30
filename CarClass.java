@@ -15,6 +15,7 @@ class Car {
     }
 
     void displayInfo() {
+        System.out.println("===Car Information===");
         System.out.println("Brand: " + brand);
         System.out.println("Model: " + model);
         System.out.println("Year: " + year);
@@ -22,7 +23,7 @@ class Car {
     }
 }
 
-public class Ex1_Car {
+public class CarClass {
     public static void main(String[] args) {
         Car car1 = new Car("Toyota", "Corolla", 2020);
         Car car2 = new Car("Honda", "Civic", 2022);

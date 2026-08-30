@@ -32,7 +32,7 @@ class BankAccount {
     }
 }
 
-public class Ex3_BankAccount {
+public class BankAccountClass {
     public static void main(String[] args) {
         BankAccount acc1 = new BankAccount("A101", 5000);
         BankAccount acc2 = new BankAccount("A102", 2000);
