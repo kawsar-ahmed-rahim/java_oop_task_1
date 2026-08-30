@@ -31,7 +31,7 @@ class Student {
     }
 }
 
-public class Ex11_Student {
+public class GradeManagement {
     public static void main(String[] args) {
         Student student = new Student();
         student.name = "Rahim";

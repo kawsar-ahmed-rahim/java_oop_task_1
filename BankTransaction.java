@@ -42,7 +42,7 @@ class BankAccount {
     }
 }
 
-public class Ex10_BankTransactionTracker {
+public class BankTransaction {
     public static void main(String[] args) {
         BankAccount account = new BankAccount("Rahim", 10000);
 

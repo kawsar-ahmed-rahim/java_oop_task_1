@@ -31,7 +31,7 @@ class Room {
     }
 }
 
-public class Ex13_Room {
+public class HotelRoomBooking {
     public static void main(String[] args) {
         Room room1 = new Room(101, 2000);
         Room room2 = new Room(102, 3500);

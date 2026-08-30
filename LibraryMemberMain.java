@@ -26,7 +26,7 @@ class LibraryMember {
     }
 }
 
-public class Ex9_LibraryMember {
+public class LibraryMemberMain {
     public static void main(String[] args) {
         LibraryMember member = new LibraryMember();
         member.memberName = "Rahim";

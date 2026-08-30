@@ -18,7 +18,7 @@ class CartItem {
     }
 }
 
-public class Ex8_CartItem {
+public class CartItemClass {
     public static void main(String[] args) {
         CartItem item = new CartItem();
         item.itemName = "Notebook";

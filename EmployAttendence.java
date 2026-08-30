@@ -30,7 +30,7 @@ class Employee {
     }
 }
 
-public class Ex15_EmployeeAttendance {
+public class EmployeeAttendance {
     public static void main(String[] args) {
         Employee emp1 = new Employee("Rahim", 1, 22);
         Employee emp2 = new Employee("Karim", 2, 22);

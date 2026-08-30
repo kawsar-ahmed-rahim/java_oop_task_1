@@ -18,7 +18,7 @@ class Product {
     }
 }
 
-public class Ex6_Product {
+public class ProductDiscount {
     public static void main(String[] args) {
         Product p = new Product();
         p.name = "Bluetooth Headphones";

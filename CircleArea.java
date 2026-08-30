@@ -22,7 +22,7 @@ class Circle {
     }
 }
 
-public class Ex7_Circle {
+public class CircleArea {
     public static void main(String[] args) {
         Circle c = new Circle();
         c.radius = 7;
