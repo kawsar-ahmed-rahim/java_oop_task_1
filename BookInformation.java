@@ -1,10 +1,8 @@
-// Create a BankAccount class with:
-// 
-// Attributes: accountNumber, balance.
-// 
-// Methods: deposit(), withdraw(), and displayBalance().
-// 
-// In main, create two BankAccount objects and transfer money between them.
+// Create a Book class with fields: title, author, price.
+// •
+// In the main method, create three Book objects and assign values directly.
+// •
+// Display all book details using a method showBook().
 
 class Book {
     String title;
@@ -19,7 +17,7 @@ class Book {
     }
 }
 
-public class Ex4_Book {
+public class BookInformation {
     public static void main(String[] args) {
         Book b1 = new Book();
         b1.title = "The Alchemist";

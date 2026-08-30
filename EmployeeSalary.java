@@ -16,10 +16,10 @@ class Employee {
     }
 }
 
-public class Ex5_Employee {
+public class EmployeeSalary {
     public static void main(String[] args) {
         Employee emp = new Employee();
-        emp.name = "Rahim Uddin";
+        emp.name = "Rahim";
         emp.designation = "Software Engineer";
         emp.salary = 50000;
 

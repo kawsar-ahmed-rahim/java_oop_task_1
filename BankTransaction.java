@@ -48,7 +48,7 @@ public class Ex10_BankTransactionTracker {
 
         account.deposit(2000);
         account.withdraw(1500);
-        account.withdraw(50000); // triggers error
+        account.withdraw(50000); 
         account.deposit(500);
 
         account.showHistory();
