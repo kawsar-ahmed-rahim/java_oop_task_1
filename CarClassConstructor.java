@@ -8,7 +8,11 @@ class Car {
     String model;
     int year;
 
-   
+    Car(String brand, String model, int year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
 
     void displayInfo() {
         System.out.println("===Car Information===");
@@ -19,18 +23,10 @@ class Car {
     }
 }
 
-public class CarClass {
+public class CarClassConstructor {
     public static void main(String[] args) {
-        Car car1 = new Car();
-        Car car2 = new Car();
-
-        car1.brand = "Toyota";
-        car1.model = "Corolla";
-        car1.year = 2022;
-
-        car2.brand = "Honda";
-        car2.model = "Civic";
-        car2.year = 2020;
+        Car car1 = new Car("Toyota", "Corolla", 2020);
+        Car car2 = new Car("Honda", "Civic", 2022);
 
         car1.displayInfo();
         car2.displayInfo();

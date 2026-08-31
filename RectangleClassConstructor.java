@@ -1,4 +1,4 @@
-// 2.Create a Rectangle class with attributes: length, width.
+// Create a Rectangle class with attributes: length, width.
 
 // Method calculateArea() to return area.
 
@@ -10,6 +10,11 @@ class Rectangle {
     double length;
     double width;
 
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
     double calculateArea() {
         return length * width;
     }
@@ -19,12 +24,9 @@ class Rectangle {
     }
 }
 
-public class RectangleClass {
+public class RectangleClassConstructor {
     public static void main(String[] args) {
-        Rectangle rect = new Rectangle();
-        
-        rect.length = 22;
-        rect.width = 20;
+        Rectangle rect = new Rectangle(10, 5);
 
         System.out.println("Area: " + rect.calculateArea());
         System.out.println("Perimeter: " + rect.calculatePerimeter());
