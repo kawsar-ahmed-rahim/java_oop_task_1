@@ -6,6 +6,9 @@
 
 // In main, create a Rectangle object and display its area and perimeter.
 
+// use constructor
+
+
 class Rectangle {
     double length;
     double width;

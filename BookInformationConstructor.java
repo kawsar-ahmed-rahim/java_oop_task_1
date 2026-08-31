@@ -4,6 +4,8 @@
 // •
 // Display all book details using a method showBook().
 
+// use constructor
+
 class Book {
     String title;
     String author;

@@ -1,7 +1,10 @@
 // 1.Create a Car class with three attributes: brand, model, and year.
 
 // Add a method displayInfo() that prints all details.
+
 // Create two Car objects in the main method and call displayInfo() for each.
+
+// use constructor
 
 class Car {
     String brand;

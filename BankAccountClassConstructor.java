@@ -6,6 +6,9 @@
 // 
 // In main, create two BankAccount objects and transfer money between them.
 
+// use constructor
+
+
 class BankAccount {
     String accountNumber;
     double balance;
