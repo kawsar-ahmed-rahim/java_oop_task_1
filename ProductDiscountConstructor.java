@@ -4,10 +4,20 @@
 
 // Write a method calculateDiscountedPrice() to print the price after discount.
 
+// use constructor
+
 class Product {
     String name;
     double price;
     double discountPercentage;
+
+    Product(String name,
+            double price,
+            double discountPercentage) {
+        this.name = name;
+        this.price = price;
+        this.discountPercentage = discountPercentage;
+    }
 
     void calculateDiscountedPrice() {
         double discountedPrice = price - (price * discountPercentage / 100);
@@ -18,13 +28,9 @@ class Product {
     }
 }
 
-public class ProductDiscount {
+public class ProductDiscountConstructor {
     public static void main(String[] args) {
-        Product p = new Product();
-        p.name = "Bluetooth Headphones";
-        p.price = 2000;
-        p.discountPercentage = 15;
-
+        Product p = new Product("Bluetooth Headphones", 2000, 15);
         p.calculateDiscountedPrice();
     }
 }
