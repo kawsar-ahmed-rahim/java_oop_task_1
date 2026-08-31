@@ -7,9 +7,13 @@
 // In main, create two BankAccount objects and transfer money between them.
 
 class BankAccount {
-    int accountNumber;
+    String accountNumber;
     double balance;
 
+    BankAccount(String accountNumber, double balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
 
     void deposit(double amount) {
         balance += amount;
@@ -28,14 +32,10 @@ class BankAccount {
     }
 }
 
-public class BankAccountClass {
+public class BankAccountClassConstructor {
     public static void main(String[] args) {
-        BankAccount acc1 = new BankAccount();
-        BankAccount acc2 = new BankAccount();
-        acc1.accountNumber = 12;
-        acc1.balance = 483;
-        acc2.accountNumber = 19;
-        acc2.balance = 8345;
+        BankAccount acc1 = new BankAccount("A101", 5000);
+        BankAccount acc2 = new BankAccount("A102", 2000);
 
         double transferAmount = 1000;
 

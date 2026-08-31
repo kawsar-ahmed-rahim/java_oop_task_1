@@ -9,6 +9,12 @@ class Book {
     String author;
     double price;
 
+    Book(String title, String author, double price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
+
     void showBook() {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
@@ -17,22 +23,13 @@ class Book {
     }
 }
 
-public class BookInformation {
+public class BookInformationConstructor {
     public static void main(String[] args) {
-        Book b1 = new Book();
-        b1.title = "The Alchemist";
-        b1.author = "Paulo Coelho";
-        b1.price = 350;
+        Book b1 = new Book("The Alchemist", "Paulo Coelho", 450);
 
-        Book b2 = new Book();
-        b2.title = "1984";
-        b2.author = "George Orwell";
-        b2.price = 420;
+        Book b2 = new Book("1984", "George Orwell", 453);
 
-        Book b3 = new Book();
-        b3.title = "Clean Code";
-        b3.author = "Robert C. Martin";
-        b3.price = 800;
+        Book b3 = new Book("Clean Code", "Robert C. Martin", 200);
 
         b1.showBook();
         b2.showBook();
