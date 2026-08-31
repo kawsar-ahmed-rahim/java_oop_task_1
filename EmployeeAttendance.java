@@ -26,7 +26,7 @@ class Employee {
     }
 
     double attendancePercentage() {
-        return (daysPresent / (double) totalWorkingDays) * 100;
+        return daysPresent * 100 / totalWorkingDays;
     }
 }
 
