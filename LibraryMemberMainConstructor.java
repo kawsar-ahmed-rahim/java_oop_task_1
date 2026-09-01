@@ -11,6 +11,14 @@ class LibraryMember {
     String membershipType;
     int booksBorrowed;
 
+    LibraryMember( String memberName,
+    String membershipType,
+    int booksBorrowed){
+        this.memberName = memberName;
+        this.membershipType = membershipType;
+        this.booksBorrowed = booksBorrowed;
+    }
+
     void borrowBook() {
         booksBorrowed++;
         System.out.println(memberName + " borrowed a book. Total borrowed: " + booksBorrowed);
@@ -26,14 +34,10 @@ class LibraryMember {
     }
 }
 
-public class LibraryMemberMain {
+public class LibraryMemberMainConstructor {
     public static void main(String[] args) {
-        LibraryMember member = new LibraryMember();
-        member.memberName = "Rahim";
-        member.membershipType = "Premium";
-        member.booksBorrowed = 0;
+        LibraryMember member = new LibraryMember("Rahim", "Premium", 0);
      
-
 
         member.borrowBook();
         member.borrowBook();

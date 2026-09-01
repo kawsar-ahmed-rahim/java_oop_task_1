@@ -1,4 +1,4 @@
-// Create a CartItem class with fields: itemName, unitPrice, quantity.
+// 8.Create a CartItem class with fields: itemName, unitPrice, quantity.
 
 // Assign values directly in main.
 
@@ -18,7 +18,7 @@ class CartItem {
     }
 }
 
-public class CartItemClass {
+public class ShoppingCartItem {
     public static void main(String[] args) {
         CartItem item = new CartItem();
         item.itemName = "Notebook";
