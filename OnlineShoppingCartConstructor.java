@@ -6,34 +6,37 @@
 // 
 // In main, create an array of 3 products, calculate each product’s total price, and sum all for the cart total.
 
-
+// use constructor
 
 class Product {
     String name;
     double price;
     int quantity;
 
+    Product(String name,
+    double price,
+    int quantity){
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+
+    }
+
     double totalPrice() {
         return price * quantity;
     }
 }
 
-public class OnlineShoppingCart {
+public class OnlineShoppingCartConstructor {
     public static void main(String[] args) {
-        Product p1 = new Product();
-        p1.name = "Pen";
-        p1.price = 10;
-        p1.quantity = 5;
+        Product p1 = new Product("Pen", 10, 5);
+       
 
-        Product p2 = new Product();
-        p2.name = "Notebook";
-        p2.price = 50;
-        p2.quantity = 3;
+        Product p2 = new Product("Notebook", 50, 3);
+        
 
-        Product p3 = new Product();
-        p3.name = "Bag";
-        p3.price = 800;
-        p3.quantity = 1;
+        Product p3 = new Product("Bag", 700, 1);
+       
 
         double total1 = p1.totalPrice();
         double total2 = p2.totalPrice();

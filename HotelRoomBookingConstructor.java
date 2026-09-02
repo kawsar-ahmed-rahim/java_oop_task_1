@@ -8,6 +8,7 @@
 // 
 // In main, create multiple rooms, book them, and display bills.
 
+// use constructor
 
 class Room {
     int roomNumber;
@@ -15,6 +16,12 @@ class Room {
     double pricePerNight;
     int nightsBooked;
 
+    Room(int roomNumber, double pricePerNight) {
+        this.roomNumber = roomNumber;
+        this.pricePerNight = pricePerNight;
+        this.isBooked = false;
+        this.nightsBooked = 0;
+    }
 
     void bookRoom(int nights) {
         isBooked = true;
@@ -26,16 +33,10 @@ class Room {
     }
 }
 
-public class HotelRoomBooking {
+public class HotelRoomBookingConstructor {
     public static void main(String[] args) {
-        Room room1 = new Room();
-        Room room2 = new Room();
-
-        room1.roomNumber = 101;
-        room1.pricePerNight = 3500;
-
-        room2.roomNumber = 102;
-        room2.pricePerNight = 5500;
+        Room room1 = new Room(101, 2000);
+        Room room2 = new Room(102, 3500);
 
         room1.bookRoom(3);
         room2.bookRoom(5);
