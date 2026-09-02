@@ -13,11 +13,6 @@ class Book {
     String author;
     boolean isIssued;
 
-    Book(String title, String author) {
-        this.title = title;
-        this.author = author;
-        this.isIssued = false;
-    }
 
     void issueBook() {
         if (!isIssued) {
@@ -36,7 +31,9 @@ class Book {
 
 public class BookIssueSystem {
     public static void main(String[] args) {
-        Book book = new Book("Effective Java", "Joshua Bloch");
+        Book book = new Book();
+        book.title = "Effective Java";
+        book.author = "Joshua Bloch";
 
         book.issueBook();  // issues successfully
         book.issueBook();  // already issued
