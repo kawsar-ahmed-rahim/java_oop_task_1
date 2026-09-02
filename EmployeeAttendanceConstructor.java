@@ -8,34 +8,33 @@
 
 // In main, create two employees, update attendance for a month, and display percentage.
 
+//use constructor
 class Employee {
     String name;
     int id;
     int daysPresent;
     int totalWorkingDays;
 
+    Employee(String name, int id, int totalWorkingDays) {
+        this.name = name;
+        this.id = id;
+        this.totalWorkingDays = totalWorkingDays;
+        this.daysPresent = 0;
+    }
 
     void markAttendance(int days) {
         daysPresent += days;
     }
 
     double attendancePercentage() {
-        return (daysPresent / (double) totalWorkingDays) * 100;
+         return (daysPresent / (double) totalWorkingDays) * 100;
     }
 }
 
-public class EmployeeAttendance {
+public class EmployeeAttendanceConstructor {
     public static void main(String[] args) {
-        Employee emp1 = new Employee();
-        Employee emp2 = new Employee();
-
-        emp1.name = "rahim";
-        emp1.id = 1;
-        emp1.daysPresent = 12;
-
-        emp2.name = "kahim";
-        emp2.id = 2;
-        emp2.daysPresent = 22;
+        Employee emp1 = new Employee("Rahim", 1, 22);
+        Employee emp2 = new Employee("Karim", 2, 22);
 
         emp1.markAttendance(20);
         emp2.markAttendance(18);
