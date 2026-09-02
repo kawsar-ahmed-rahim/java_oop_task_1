@@ -14,6 +14,10 @@ class BankAccount {
     String[] transactionHistory = new String[100];
     int transactionCount = 0;
 
+    BankAccount(String accountHolder, double balance) {
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+    }
 
     void deposit(double amount) {
         balance += amount;
@@ -38,12 +42,9 @@ class BankAccount {
     }
 }
 
-public class BankTransaction {
+public class BankTransactionCo {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount();
-
-        account.accountHolder = "rahim";
-        account.balance = 10000;
+        BankAccount account = new BankAccount("Rahim", 10000);
 
         account.deposit(2000);
         account.withdraw(1500);
