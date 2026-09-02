@@ -1,4 +1,4 @@
-// Create a Book class with fields: title, author, isIssued (boolean).
+// 14.Create a Book class with fields: title, author, isIssued (boolean).
 // 
 // Add methods:
 // 
@@ -7,6 +7,8 @@
 // returnBook() → sets isIssued = false.
 // 
 // In main, create a book, issue it, try issuing again, return it, then issue again.
+
+// use constructor
 
 class Book {
     String title;
@@ -34,7 +36,7 @@ class Book {
     }
 }
 
-public class Ex14_Book {
+public class BookIssueSystemConstructor {
     public static void main(String[] args) {
         Book book = new Book("Effective Java", "Joshua Bloch");
 
